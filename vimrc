@@ -85,3 +85,8 @@ omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 
+colorscheme flatlandia
+
+set foldmethod=indent
+set foldlevel=2
+set foldcolumn=1
