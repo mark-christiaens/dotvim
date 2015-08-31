@@ -3,9 +3,6 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 execute pathogen#helptags()
 
-" Set colorscheme
-colorscheme flatlandia
-
 " Basic settings
 set textwidth=80
 set autoindent
@@ -17,10 +14,6 @@ set backup
 set ruler
 set showmode
 set wildignore=*.o,*.obj,*.class,*~,.bak,*.pyc,*.pyo,_build,dist,cabal-dev
-
-set foldmethod=indent
-set foldlevel=2
-set foldcolumn=1
 
 set autoread
 set autowrite
@@ -92,13 +85,3 @@ omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 
-" Goyo & LimeLight integration
-function! GoyoBefore()
-    Limelight
-endfunction
-
-function! GoyoAfter()
-    Limelight!
-endfunction
-
-let g:goyo_callbacks = [function('GoyoBefore'), function('GoyoAfter')]
