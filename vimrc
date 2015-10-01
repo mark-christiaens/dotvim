@@ -79,14 +79,11 @@ let g:cumino_use_cabal_repl = 1
 " Support 'codex'
 set tags=tags;/,codex.tags;/
 
-" EasyMotion setup
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
-
 colorscheme flatlandia
 
 set foldmethod=indent
 set foldlevel=2
 set foldcolumn=1
+set nofoldenable
+set cursorline
+set hlsearch

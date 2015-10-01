@@ -3,7 +3,7 @@ copen 4
 
 set lines=50 columns=130
 
-set guifont=DejaVu\ Sans\ Mono\ 9.5
+set guifont=Hack \9.5
 
 set guioptions-=m
 set guioptions-=T
