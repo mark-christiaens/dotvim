@@ -48,8 +48,8 @@ au FileType python set omnifunc=pythoncomplete#Complete
 let g:python_highlight_all=1
 
 " Haskell
-au BufWritePost *.hs GhcModCheck
 au BufWritePost *.hs GhcModLint
+au BufWritePost *.hs GhcModCheck
 au FileType haskell nnoremap <leader>t :GhcModType<cr>
 au FileType haskell nnoremap <leader>T :GhcModTypeInsert<cr>
 au FileType haskell set omnifunc=necoghc#omnifunc
