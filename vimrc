@@ -48,10 +48,15 @@ au FileType python set omnifunc=pythoncomplete#Complete
 let g:python_highlight_all=1
 
 " Haskell
-" au BufWritePost *.hs GhcModCheckAndLintAsync
+au BufWritePost *.hs GhcModCheck
+au BufWritePost *.hs GhcModLint
 au FileType haskell nnoremap <leader>t :GhcModType<cr>
 au FileType haskell nnoremap <leader>T :GhcModTypeInsert<cr>
 au FileType haskell set omnifunc=necoghc#omnifunc
+au FileType haskell set tabstop=4
+au FileType haskell set expandtab
+au FileType haskell set softtabstop=2
+au FileType haskell set shiftwidth=2
 
 let g:necoghc_enable_detailed_browse = 1
 
